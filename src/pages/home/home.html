@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Press the button to find your coordinates.</h3>
+  <button (click)="getCurrentPosition()" ion-button>Find Coordinates</button>
+  <div><script>document.write(getCurrentPosition())</script></div>
+  <div>
+    <p *ngIf="PrintCoordinates.latitude">{{PrintCoordinates.latitude}}</p>
+    <p *ngIf="PrintCoordinates.longitude">{{PrintCoordinates.longitude}}</p>
+  </div>
+</ion-content>

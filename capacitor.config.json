@@ -1,0 +1,6 @@
+{
+  "bundleWebRuntime": true,
+  "webDir": "www",
+  "appId": "com.geo.project",
+  "appName": "geoproject"
+}
